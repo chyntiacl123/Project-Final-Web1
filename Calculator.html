@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+    <!-- Calculator Container -->
+    <div class="bg-white rounded-lg shadow-lg p-6 w-80">
+        <h1 class="text-2xl font-bold text-center mb-6 text-blue-600">Simple Calculator</h1>
+        <div class="mb-4">
+            <!-- Display -->
+            <input 
+                type="text" 
+                id="calculator-display" 
+                class="w-full p-2 text-right text-lg border rounded focus:outline-none bg-gray-50" 
+                disabled 
+            />
+        </div>
+        <div class="grid grid-cols-4 gap-2">
+            <!-- Buttons -->
+            <button class="bg-gray-300 p-2 rounded text-lg font-bold" onclick="clearDisplay()">C</button>
+            <button class="bg-gray-300 p-2 rounded text-lg font-bold" onclick="appendValue('(')">(</button>
+            <button class="bg-gray-300 p-2 rounded text-lg font-bold" onclick="appendValue(')')">)</button>
+            <button class="bg-blue-600 text-white p-2 rounded text-lg font-bold" onclick="appendValue('/')">/</button>
+            <button class="bg-gray-200 p-2 rounded text-lg font-bold" onclick="appendValue('7')">7</button>
+            <button class="bg-gray-200 p-2 rounded text-lg font-bold" onclick="appendValue('8')">8</button>
+            <button class="bg-gray-200 p-2 rounded text-lg font-bold" onclick="appendValue('9')">9</button>
+            <button class="bg-blue-600 text-white p-2 rounded text-lg font-bold" onclick="appendValue('*')">×</button>
+            <button class="bg-gray-200 p-2 rounded text-lg font-bold" onclick="appendValue('4')">4</button>
+            <button class="bg-gray-200 p-2 rounded text-lg font-bold" onclick="appendValue('5')">5</button>
+            <button class="bg-gray-200 p-2 rounded text-lg font-bold" onclick="appendValue('6')">6</button>
+            <button class="bg-blue-600 text-white p-2 rounded text-lg font-bold" onclick="appendValue('-')">-</button>
+            <button class="bg-gray-200 p-2 rounded text-lg font-bold" onclick="appendValue('1')">1</button>
+            <button class="bg-gray-200 p-2 rounded text-lg font-bold" onclick="appendValue('2')">2</button>
+            <button class="bg-gray-200 p-2 rounded text-lg font-bold" onclick="appendValue('3')">3</button>
+            <button class="bg-blue-600 text-white p-2 rounded text-lg font-bold" onclick="appendValue('+')">+</button>
+            <button class="bg-gray-200 p-2 rounded text-lg font-bold" onclick="appendValue('0')">0</button>
+            <button class="bg-gray-200 p-2 rounded text-lg font-bold" onclick="appendValue('.')">.</button>
+            <button class="col-span-2 bg-green-600 text-white p-2 rounded text-lg font-bold" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script>
+        const display = document.getElementById('calculator-display');
+
+        // Function to append value to display
+        function appendValue(value) {
+            display.value += value;
+        }
+
+        // Function to clear the display
+        function clearDisplay() {
+            display.value = '';
+        }
+
+        // Function to calculate the result
+        function calculateResult() {
+            try {
+                display.value = eval(display.value);
+            } catch {
+                display.value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>

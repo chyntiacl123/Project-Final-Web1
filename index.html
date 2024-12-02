@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-xl font-bold">Chyntia's Portfolio</h1>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="portfolio.html" class="hover:underline">Portfolio</a></li>
+                <li><a href="calculator.html" class="hover:underline">Calculator</a></li>
+                <li><a href="registration.html" class="hover:underline">Registration</a></li>
+            </ul>
+        </nav>
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold">Hello, I'm Chyntia Laura Tampubolon</h1>
+            <p class="text-xl">A Passionate Web Developer & Data Analyst</p>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <section class="text-center">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-6">About Me</h2>
+            <p class="text-lg text-gray-700 mb-4">I'm a web developer and data analyst who loves solving problems with technology. I enjoy creating interactive websites and analyzing data to uncover insights. Currently, I am focusing on building full-stack applications and improving my skills in web design and development.</p>
+            
+            <p class="text-lg text-gray-700 mb-4">I believe in continuous learning and always look for new challenges that will help me grow both professionally and personally.</p>
+
+            <button id="showSkills" class="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none">Show My Skills</button>
+
+            <!-- Hidden Skills Section -->
+            <div id="skills" class="mt-8 hidden">
+                <h3 class="text-xl font-semibold text-blue-600">My Skills</h3>
+                <ul class="list-disc list-inside text-gray-700 text-lg mt-4">
+                    <li>Web Development with HTML, CSS, and JavaScript</li>
+                    <li>Database Management with MySQL</li>
+                    <li>Basic Programming in Python and Java</li>
+                    <li>UI/UX Design</li>
+                    <li>Software Development with C# and C++</li>
+                    <li>Problem Solving and Innovation</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4 text-center">
+        <p>&copy; 2024 Chyntia Laura Tampubolon. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Show/Hide Skills Section
+        document.getElementById('showSkills').addEventListener('click', function() {
+            const skillsSection = document.getElementById('skills');
+            skillsSection.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc; /* Light gray */
+    color: #1a202c; /* Dark gray */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2563eb; /* Blue */
+    color: #ffffff; /* White */
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.25rem; /* Text size 3xl */
+    font-weight: 700; /* Bold */
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.25rem; /* Text size xl */
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    color: #2563eb; /* Blue */
+    font-size: 1.5rem; /* Text size 2xl */
+    font-weight: 600; /* Semi-bold */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+p {
+    color: #4a5568; /* Gray-700 */
+    font-size: 1.125rem; /* Text size lg */
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #2563eb; /* Blue */
+    color: #ffffff; /* White */
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem; /* Text size base */
+    font-weight: 600; /* Semi-bold */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e40af; /* Darker blue */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+#skills {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#skills h3 {
+    color: #2563eb; /* Blue */
+    font-size: 1.25rem; /* Text size xl */
+    font-weight: 600; /* Semi-bold */
+    margin-bottom: 1rem;
+}
+
+#skills ul {
+    padding-left: 1.5rem; /* Indent */
+}
+
+#skills li {
+    color: #4a5568; /* Gray-700 */
+    font-size: 1.125rem; /* Text size lg */
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #2563eb; /* Blue */
+    color: #ffffff; /* White */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
